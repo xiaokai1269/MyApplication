@@ -29,10 +29,4 @@ public class MyApplication extends Application{
         return mMyApplication;
     }
 
-    public void getPhoneScreenWidth(){
-        WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
-        int screenWidth = wm.getDefaultDisplay().getWidth();
-        int screenHeight = wm.getDefaultDisplay().getHeight();
-        
-    }
 }
