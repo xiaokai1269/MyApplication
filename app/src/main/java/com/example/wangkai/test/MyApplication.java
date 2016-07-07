@@ -24,7 +24,7 @@ public class MyApplication extends Application{
         if(mMyApplication == null){
             synchronized (MyApplication.class){
                 if(mMyApplication == null){
-                    return mMyApplication;
+                    mMyApplication = this;
                 }
             }
         }
