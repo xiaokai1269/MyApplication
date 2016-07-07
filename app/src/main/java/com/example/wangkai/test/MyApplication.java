@@ -28,5 +28,11 @@ public class MyApplication extends Application{
         }
         return mMyApplication;
     }
+    public void getPhoneWithAndHeight(){
+        WindowManager windowManager = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
+        int width = windowManager.getDefaultDisplay().getWidth();
+        int height = windowManager.getDefaultDisplay().getHeight();
+        
+    }
 
 }
