@@ -15,7 +15,19 @@ public class MyApplication extends Application{
         mMyApplication = this;
     }
 
+    /*
     public synchronized MyApplication getInstance(){
+        return mMyApplication;
+    }
+    */
+    public MyApplication getInstance(){
+        if(mMyApplication == null){
+            synchronized (MyApplication.class){
+                if(mMyApplication == null){
+                    return mMyApplication;
+                }
+            }
+        }
         return mMyApplication;
     }
 
